@@ -1,10 +1,11 @@
-import math
 
 def derivative(x,f):
+    """Compute derivative using finite different with epsilon = 0.001 of f at x"""
     epsilon = 0.001
     return (f(x+epsilon)-f(x))/epsilon
 
 def optimize(x, f):
+    """Find the minimum of f starting from x"""
     epsilon = 0.001
     d=2
     while d>0.001:
