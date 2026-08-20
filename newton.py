@@ -3,7 +3,7 @@ import numdifftools as nd
 
 def newton_optimize_with_packages(f, x0, tol=1e-6, max_iter=100):
     """
-    Custom Newton loop using 'numdifftools' for finite difference derivatives.
+    Newton's method of optimization for multivariate function. 
     """
     x = np.array(x0, dtype=float)
     
